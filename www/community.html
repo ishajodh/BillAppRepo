@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-<div style="width:150px;height:150px;line-height:3em;overflow:auto;padding:5px">
         <link rel= "stylesheet" type="text/css" href="community.css">
         <meta charset="utf-8">
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
@@ -21,19 +19,31 @@
       };
       firebase.initializeApp(config);
       </script>
-        <script src= "community.js"></script>
+      <script src= "community.js"></script>
+      <script src= "community.css"></script>
+      <p id="demo"></p>
+      <script>
+      var d = new Date();
+      document.getElementById("demo").innerHTML = d.toDateString();
+</script>
     </head>
     <body>
+      <div class="topnav" id="myTopnav">
+        <a href="home.html">Home</a>
+        <a href="community.html">Community</a>
+        <a href="otherchecklist.html">Bills</a>
+        <a href="contactperson.html">Contact</a>
+        <a href="thefunfacts.html">Fun Facts</a>
+        <a href="ourgroup.html">About Us</a>
 
-      <h2><center>community forum</h2>
-      <hr>
-      <br>
-      <input style="height:200px;font-size:14pt;" type="text" id="key"></input>
 
-      <br>
-    </div>
+    <h2><center>Community Forum</h2>
+      <div id ="Messages" ></div>
 
-
+    <center><textarea rows="4" cols="50" id="key"></textarea>
+    <br>
+    <button onclick="storeTheData()">submit</button>
+    <br><br>
 
 
 

@@ -1,4 +1,16 @@
-body{
+body {
   text-align: center;
-<div id="" style="overflow:scroll; height:400px;">
+  font-family: verdana;
+  font-size: 15px;
+  background-color: WhiteSmoke;
+}
+
+p{
+text-align: center;
+}
+h2{
+  text-align: center;
+  font-family: verdana;
+  font-size: 30px;
+
 }
